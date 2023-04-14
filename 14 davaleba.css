@@ -1,0 +1,554 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: Segoe UI;
+    src: url(fonts/Segoe\ UI.ttf);
+}
+@media only screen and (max-device-width: 1366px) and (max-device-height: 768px) {
+    .section-booking
+    {
+        width: 1366px !important;
+        height: 119px !important;
+    }
+    .img-main
+    {
+        width: 1366px !important;
+        height: auto !important;
+    }
+    #cities {
+        width: 192px !important;
+        height: 60px !important;
+    }
+    #check-in {
+        width: 192px !important;
+        height: 60px !important;
+    }
+    #check-out {
+        width: 192px !important;
+        height: 60px !important;
+    }
+    #search {
+        width: 202px !important;
+        height: 60px !important;
+    }
+    .h-main {
+        margin-left: 220px !important;
+        margin-top: -450px !important;
+    }
+    .p-main {
+        margin-left: 440px !important;
+        margin-top: -340px !important;
+    }
+    #explore-button {
+        margin-left: 490px !important;
+        margin-top: -275px !important;
+        width: 360px !important;
+        height: 76px !important;
+    }
+    .section-facilities {
+        width: 1266px !important;
+        height: 290px !important;
+        margin-left: 50px !important;
+    }
+    .h-facilities {
+        margin-top: 40px !important;
+    }
+    .facilities {
+        margin-right: 150px !important;
+    }
+    .h-rooms-rates {
+        margin-top: 220px !important;
+    }
+    .h-rooms-1, .h-rooms-3 {
+        position: absolute !important;
+        margin-top: -200px !important;
+        margin-left: 120px !important;
+    }
+    .h-rooms-3 {
+        margin-left: 170px !important; 
+    }
+    #check-button-1 {
+        position: absolute !important;
+        margin-top: 370px !important;
+        margin-left: -440px !important;
+        width: 244px !important;
+        height: 76px !important;
+    }
+    #check-button-3 {
+        position: absolute !important;
+        margin-top: 370px !important;
+        margin-left: -440px !important;
+        width: 244px !important;
+        height: 76px !important;
+    }
+    .h-rooms-2, .h-rooms-4 {
+        position: absolute !important;
+        margin-top: -200px !important;
+        margin-left: 120px !important;
+    }
+    .h-rooms-4 {
+        margin-left: 190px !important;   
+    }
+    #check-button-2 {
+        position: absolute !important;
+        margin-top: 410px !important;
+        margin-left: -440px !important;
+        width: 244px !important;
+        height: 76px !important;
+    }
+    #check-button-4 {
+        position: absolute !important;
+        margin-top: 410px !important;
+        margin-left: -440px !important;
+        width: 244px !important;
+        height: 76px !important;
+    }
+    .h-get-already {
+        margin-top: 310px !important;
+    }
+    #book-button {
+        width: 418px !important;
+        height: 76px !important;
+    }
+    footer {
+        margin-top: 110px !important;
+        width: 1366px !important;
+        height: 469px !important;
+    }
+    .input-email, .input-subscribe {
+        width: 371px !important;
+        height: 76px !important;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background: white;
+    margin: 0;
+}
+.img-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4vh;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+a:link, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link:active, a:visited:active {
+    text-decoration: none;
+    cursor: default;
+}
+.our-hotel, .rooms-rates, .nav-facilities, .contact-us {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #957554;
+    mix-blend-mode: normal;
+    margin-right: 3vw;
+}
+#search-button {
+    border: none;
+    background-color: white;
+    margin-left: -1.5vw;
+    cursor: pointer;
+}
+.section-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 11.5vh;
+    margin-top: 4vh;
+    background-color: #111111;
+}
+#cities {
+    width: 10vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    border: none;
+    margin-right: 1vw;
+}
+#check-in {
+    width: 10vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    border: none;
+    margin-right: 1vw;
+}
+#check-out {
+    width: 10vw;
+    height: 6vh;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    border: none;
+    margin-right: 1vw;
+}
+#search {
+    width: 11.5vw;
+    height: 6vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+.img-main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.h-main {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 106px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    position: absolute;
+    margin-top: -49vh;
+    margin-left: 24vw;
+}
+.p-main {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    position: absolute;
+    margin-top: -38vh;
+    margin-left: 36vw;
+}
+#explore-button {
+    width: 18.5vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    position: absolute;
+    margin-top: -30vh;
+    margin-left: 39.5vw;
+    cursor: pointer;
+}
+.section-facilities {
+    position: absolute;
+    display: block;
+    margin-left: 14vw;
+    margin-right: 15vw;
+    margin-top: -15vh;
+    width: 70vw;
+    height: 30vh;
+    background-color: #ffffff;
+}
+.h-facilities {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    mix-blend-mode: normal;
+    text-align: center;
+    margin-top: 3vh;
+}
+.icon-facilities {
+    display: flex;
+    justify-content: center;
+    margin-left: 8vw;
+}
+.facilities {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-right: 8vw;
+    
+}
+.caption {
+    display: block;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #957554;
+    mix-blend-mode: normal;
+}
+.h-rooms-rates {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    mix-blend-mode: normal;
+    text-align: center;
+    margin-top: 18vh;
+}
+.section-rooms-rates {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    height: 110vh;
+    background-color: rgb(255, 255, 255);
+    padding-top: 1vh;
+}
+.row-2 {
+    margin-left: 3vw;
+}
+.img-twin-room, .img-standart-view-room, .img-standart-room, .img-deluxe-room {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.48%, #000000 100%), url(.jpg);
+    mix-blend-mode: normal;
+    border-radius: 10px;
+}
+.img-standart-view-room, .img-deluxe-room {
+    margin-top: 5vh;
+}
+.h-rooms-1, .h-rooms-2, .h-rooms-3, .h-rooms-4 {
+    position: absolute;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-top: -21vh;
+    margin-left: 7vw;
+}
+.h-rooms-3 {
+    margin-left: 9vw;
+}
+.h-rooms-4 {
+    margin-left: 10vw;
+}
+#check-button-1 {
+    position: absolute;
+    width: 12.5vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    margin-top: 38vh;
+    margin-left: -23vw;
+    cursor: pointer;
+}
+#check-button-2 {
+    position: absolute;
+    width: 12.5vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    margin-top: 43vh;
+    margin-left: -23vw;
+    cursor: pointer;
+}
+#check-button-3 {
+    position: absolute;
+    width: 12.5vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    margin-top: 38vh;
+    margin-left: -23vw;
+    cursor: pointer;
+}
+#check-button-4 {
+    position: absolute;
+    width: 12.5vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    margin-top: 43vh;
+    margin-left: -23vw;
+    cursor: pointer;
+}
+.h-get-already {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    mix-blend-mode: normal;
+    text-align: center;
+    margin-top: 10vh;
+}
+#book-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1vh;
+    width: 23vw;
+    height: 8vh;
+    background: #DFAA5B;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    background-color: #111111;
+    margin-top: 10vh;
+}
+.p-contacts {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+.main-links {
+    display:grid
+}
+.our-hotels, .our-conferencing, .our-company, .hotel-design, .careers {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+h3 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-top: 0;
+}
+.input-email {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 18.5vw;
+    height: 8vh;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: normal;
+    border: none;
+    padding: 20px;
+}
+.input-subscribe {
+    background: #DFAA5B;
+    border-radius: 10px;
+    width: 18.5vw;
+    height: 8vh;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    border: none;
+    margin-top: 3vh;
+    cursor: pointer;
+}
